@@ -1,7 +1,0 @@
-# Cache do Python
-__pycache__/
-*.pyc
-
-# Arquivos de dados locais
-data/
-*.xlsx
