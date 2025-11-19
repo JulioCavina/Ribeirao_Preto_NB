@@ -1,0 +1,128 @@
+/* === ESTILO GLOBAL DO DASH NOVABRASIL === */
+
+/* Fundo Sólido */
+html, body, .stApp {
+    background-color: #ffffff !important; 
+    color: #002b5c;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Área principal */
+.main {
+    background: transparent !important;
+    color: #002b5c;
+}
+
+/* Cabeçalhos */
+h1, h2, h3 {
+    color: #002b5c;
+    font-weight: 700;
+}
+
+/* Título customizado para gráficos */
+.custom-chart-title {
+    color: #002b5c;
+    font-weight: 700;
+    font-size: 1.6rem !important; 
+    text-align: center !important;
+    margin-bottom: -10px; 
+}
+
+
+/* --- BOTÃO PRIMÁRIO (AZUL) --- */
+button, .stButton>button, .stButton[kind="primary"] button {
+    background-color: #007dc3;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+button:hover, .stButton>button:hover, .stButton[kind="primary"] button:hover {
+    background-color: #00a8e0;
+    transform: scale(1.03);
+    color: white; 
+    border: none;
+}
+.stButton[kind="primary"] button:focus {
+    color: white;
+}
+
+
+/* --- BOTÃO SECUNDÁRIO (BRANCO) --- */
+.stButton[kind="secondary"] button {
+    background-color: #ffffff;
+    color: #007dc3; 
+    border-radius: 10px;
+    border: 1.5px solid #007dc3; 
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+.stButton[kind="secondary"] button:hover {
+    background-color: #f0f8ff; 
+    color: #004b8d; 
+    border-color: #004b8d;
+    transform: scale(1.03);
+}
+.stButton[kind="secondary"] button:focus {
+    color: #004b8d;
+    border-color: #004b8d;
+}
+
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: rgba(255, 255, 255, 0.85);
+    border-right: 2px solid #007dc3;
+    backdrop-filter: blur(8px);
+}
+section[data-testid="stSidebar"] h2 {
+    color: #004b8d;
+    font-weight: 700;
+}
+
+/* Tabelas */
+.dataframe {
+    border-radius: 12px;
+    overflow: hidden;
+}
+/* Cabeçalho das tabelas */
+thead th {
+    background-color: #007dc3 !important;
+    color: white !important;
+}
+
+/* Links */
+a {
+    color: #007dc3;
+}
+a:hover {
+    text-decoration: underline;
+    color: #004b8d;
+}
+
+/* Ícones / Emojis */
+span[data-testid="stMarkdownContainer"] {
+    font-size: 1rem;
+}
+
+/* Bordas arredondadas e fundo para gráficos */
+div[data-testid="stPlotlyChart"], div[data-testid="stVegaLiteChart"] {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem; /* Adiciona espaço abaixo de cada gráfico */
+}
+
+/* --- INÍCIO DA ALTERAÇÃO (Linha Totalizador) --- */
+.stDataFrame table tr:last-child {
+    background-color: #f0f2f6 !important; /* Fundo cinza-claro */
+    font-weight: 700 !important;
+    border-top: 2px solid #007dc3 !important; /* Borda superior azul */
+}
+.stDataFrame table tr:last-child td {
+    color: #002b5c !important; /* Cor do texto escura */
+}
+/* --- FIM DA ALTERAÇÃO --- */
